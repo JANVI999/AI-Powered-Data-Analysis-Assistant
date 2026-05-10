@@ -11,3 +11,20 @@ OpenAI API: The LLM interprets the question, generates SQL or pandas code, execu
 3. Frontend (Streamlit)
 Simple web interface where users type questions and see results
 Displays charts, tables, or text answers
+
+# Project Structure
+ai-data-analyst/
+├── app.py                 # Streamlit frontend
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py     # Load and prep data
+│   ├── embeddings.py      # Vector DB setup
+│   ├── qa_chain.py        # LangChain RAG pipeline
+│   └── utils.py           # Helper functions
+├── data/
+│   └── sample_sales.csv   # Sample dataset
+├── requirements.txt
+├── .env.example
+├── .gitignore
+└── README.md
+
